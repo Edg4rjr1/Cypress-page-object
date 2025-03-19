@@ -1,5 +1,5 @@
-import Login from "../../support/Pages/Login/Login.js";
-import Compras from "../../support/pages/compras/Compras.js";
+import Login from "../../support/Pages/Login/LoginObj.js";
+import Compras from "../../support/pages/compras/ComprasObj.js";
 
 describe('Fluxo de compras', () => { 
     it('Fluxo de compras', () => {

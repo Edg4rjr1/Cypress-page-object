@@ -1,5 +1,5 @@
 
-import Cadastro from "../../support/pages/cadastro/Cadastro.js";
+import Cadastro from "../../support/pages/cadastro/CadastroObj.js";
 
 beforeEach(() => {
     Cadastro.acessarCadastroPage();

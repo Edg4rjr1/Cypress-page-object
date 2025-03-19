@@ -1,4 +1,4 @@
-import Contact from "../../support/pages/contact/Contact";
+import Contact from "../../support/pages/contact/ContactObj";
 
 describe('Contatc us', () => {
   it('Preencher dados para contato', () => {

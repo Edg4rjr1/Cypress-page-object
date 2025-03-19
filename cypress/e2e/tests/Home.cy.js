@@ -1,4 +1,4 @@
-import Home from "../../support/pages/home/Home";
+import Home from "../../support/pages/home/HomeObj";
 
 beforeEach(() => {
     Home.acessarPageHome()
