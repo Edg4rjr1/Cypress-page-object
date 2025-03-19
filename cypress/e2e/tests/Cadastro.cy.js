@@ -12,17 +12,17 @@ describe('Teste cadastros', () => {
 
     it('Deve exibir mensagem de erro ao cadastrar com e-mail inválido', () => {
         Cadastro.preencherCadastro('junior', 'junior123hotmail.com', 'junior123')
-        Cadastro.validarMsgErroEmail()
+        Cadastro.validarMsgErro
     });
 
     it('Deve exibir mensagem de erro ao cadastrar com senha inferior a 6 caracteres', () => {
         Cadastro.preencherCadastro('junior', 'junior123@hotmail.com', 'junio')
-        Cadastro.validarMsgErroSenha()
+        Cadastro.validarMsgErro
     });
 
     it('Cadastro sem colocar nome', () => {
         Cadastro.preencherCadastroErrado('junior123@hotmail.com', 'junior')
-        Cadastro.validarMsgErroNome()
+        Cadastro.validarMsgErro
     });
 
 

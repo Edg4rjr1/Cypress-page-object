@@ -1,29 +1,26 @@
+import cadastroElements from "./elements"
+
 class Cadastro{
     acessarCadastroPage(){
         cy.visit('https://automationpratice.com.br/register')
     }
     preencherCadastro(name, email, password){
-        cy.get('#user').type(name)
-        cy.get('#email').type(email)
-        cy.get('#password').type(password)
-        cy.get('#btnRegister').click()
+        cy.get(cadastroElements.campoNome).type(name)
+        cy.get(cadastroElements.campoEmail).type(email)
+        cy.get(cadastroElements.campoSenha).type(password)
+        cy.get(cadastroElements.botaoCadastro).click()
     }
 
     preencherCadastroErrado(email, password){
-        cy.get('#email').type(email)
-        cy.get('#password').type(password)
-        cy.get('#btnRegister').click()
+        cy.get(cadastroElements.campoEmail).type(email)
+        cy.get(cadastroElements.campoSenha).type(password)
+        cy.get(cadastroElements.botaoCadastro).click()
     }
 
-    validarMsgErroEmail(){
-        cy.get('#errorMessageFirstName').should('be.visible')
+    validarMsgErro(){
+        cy.get(cadastroElements.validarErro).should('be.visible')
     }
-    validarMsgErroSenha(){
-        cy.get('#errorMessageFirstName').should('be.visible')
-    }
-    validarMsgErroNome(){
-        cy.get('#errorMessageFirstName').should('be.visible')
-    }
+   
 }
 
 export default new Cadastro
