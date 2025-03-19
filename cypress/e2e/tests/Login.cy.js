@@ -1,4 +1,4 @@
-import Login from "../../support/Pages/Login/LoginObj.js";
+import Login from "../../support/pages/login/LoginObj";
 
 beforeEach(() => {
     Login.acessarSite()
