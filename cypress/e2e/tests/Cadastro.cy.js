@@ -20,7 +20,7 @@ describe('Teste cadastros', () => {
         Cadastro.validarMsgErro
     });
 
-    it('Cadastro sem colocar nome', () => {
+    it('Deve exibir mensagem de erro ao cadastrar sem colocar nome', () => {
         Cadastro.preencherCadastroErrado('junior123@hotmail.com', 'junior')
         Cadastro.validarMsgErro
     });
